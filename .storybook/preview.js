@@ -43,7 +43,7 @@ const preview = {
         date: /Date$/,
       },
     },
-    viewport: { viewports: customViewports }
+    viewport: { viewports: customViewports },
   },
 };
 
