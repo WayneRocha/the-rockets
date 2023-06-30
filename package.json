@@ -1,0 +1,38 @@
+{
+  "name": "the-rockets",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prepare": "husky install",
+    "prettier": "prettier --write .",
+    "lint": "cd apps/account/ && npm run lint && cd ../web/ && npm run lint",
+    "web-app:build": "cd apps/web && npm run build",
+    "account-app:build": "cd apps/account && npm run build",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
+    "@storybook/addon-essentials": "^7.0.24",
+    "@storybook/addon-interactions": "^7.0.24",
+    "@storybook/addon-links": "^7.0.24",
+    "@storybook/blocks": "^7.0.24",
+    "@storybook/nextjs": "^7.0.24",
+    "@storybook/react": "^7.0.24",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.0.24"
+  },
+  "resolutions": {
+    "webpack": "^5"
+  },
+  "dependencies": {
+    "next": "^13.4.7"
+  }
+}
