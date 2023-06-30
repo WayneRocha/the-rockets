@@ -4,9 +4,9 @@
   "description": "",
   "scripts": {
     "prettier": "prettier --write .",
-    "lint": "cd apps/account/ && npm run lint && cd ../web/ && npm run lint",
-    "app-web:build": "cd apps/web && npm run build",
-    "app-account:build": "cd apps/account && npm run build",
+    "lint": "cd src/apps/account/ && npm run lint && cd ../web/ && npm run lint",
+    "app-web:build": "cd src/apps/web && npm run build",
+    "app-account:build": "cd src/apps/account && npm run build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
