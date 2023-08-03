@@ -2,7 +2,7 @@
 module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   presets: [],
-  darkMode: 'class', // 'class' | 'media'
+  darkMode: 'class', // or 'class'
   theme: {
     screens: {
       sm: '640px',
@@ -15,24 +15,50 @@ module.exports = {
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
-      primary: "#9333EA",
-      secondary: "#ff7e33",
-      info: "#0C63E7",
+      primary: {
+        auto: "#673AB7",
+        "main": "#673AB7",
+        "light": "#D1C4E9",
+        "dark": "#311b92",
+      },
+      secondary: {
+        auto: "#00BCD4",
+        "main": "#00BCD4",
+        "light": "#B2EBF2",
+        "dark": "#006064",
+      },
+      info: {
+        auto: "#2196F3",
+        "main": "#2196F3",
+        "light": "##64B5F6",
+        "dark": "#1976D2",
+        "text": "#FFFFFF",
+      },
+      warning: {
+        auto: "#FF9800",
+        "main": "#FF9800",
+        "light": "#FFB74D",
+        "dark": "##F57C00",
+        "text": "rgb(0 0 0 / 0.87)",
+      },
+      success: {
+        auto: "#4CAF50",
+        "main": "#4CAF50",
+        "light": "#81C784",
+        "dark": "#388E3C",
+        "text": "rgb(0 0 0 / 0.87)",
+      },
+      error: {
+        auto: "#F44336",
+        "main": "#F44336",
+        "light": "#E57373",
+        "dark": "#D32F2F",
+        "text": "#FFFFFF",
+      },
       black: colors.black,
       white: colors.white,
       slate: colors.slate,
-      gray: {
-        50: "#FAFAFC",
-        100: "#E9E9EC",
-        200: "#C6C8CD",
-        300: "#ACAEB6",
-        400: "#92959F",
-        500: "#777C87",
-        600: "#5D6370",
-        700: "#434959",
-        800: "#293041",
-        900: "#0f172a",
-      },
+      gray: colors.gray,
       zinc: colors.zinc,
       neutral: colors.neutral,
       stone: colors.stone,
@@ -965,4 +991,4 @@ module.exports = {
     'disabled',
   ],
   plugins: [],
-}
+};
